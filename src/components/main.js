@@ -16,6 +16,7 @@ import burgerImage from "../images/grill_image_1.jpeg"
 import fiveStar from '../images/fiveStar.png'
 import Divider from '@material-ui/core/Divider'
 import PhoneIcon from '@material-ui/icons/Phone'
+import EmailIcon from "@material-ui/icons/Email"
 import StarRateIcon from '@material-ui/icons/StarRate';
 import SprinklesSvg from '../components/sprinkles'
 import FacebookIcon from "../images/facebook_icon_60.png"
@@ -502,7 +503,7 @@ const withStyles = makeStyles(() => ({
             marginRight: "15%",
         }
     },
-    
+
 }))
 
 const Main = () => {
@@ -617,6 +618,12 @@ const Main = () => {
                                 <Button className={classes.contactButton}>
                                     <PhoneIcon className={classes.phoneIcon} />
                                     (315) 597-8946
+                                </Button>
+                            </a>
+                            <a href="mailto:thatsasmallpalmyra@gmail.com" className={classes.contactPhone}>
+                                <Button className={classes.contactButton}>
+                                    <EmailIcon className={classes.phoneIcon} />
+                                    Email Us
                                 </Button>
                             </a>
                             <div className={classes.socialLinkWrapper}>
