@@ -367,7 +367,8 @@ const withStyles = makeStyles(() => ({
         color: "black",
         margin: "10px auto",
         justifyContent: "center",
-        fontSize: "1.25rem"
+        fontSize: "1.25rem",
+        textAlign: "center"
     },
     hourlyHeaderText: {
         display: "flex",
@@ -565,7 +566,8 @@ const Main = () => {
                     </div>
                     <div className={classes.containerMarginBottomSmall}>
                         <Typography className={classes.hourlyHeaderText}>OPEN DAILY</Typography>
-                        <Typography className={classes.hourText}>Monday - Saturday: 11am-9pm </Typography>
+                        <Typography className={classes.hourText}>Monday - Thursday: 3pm-8:30pm </Typography>
+                        <Typography className={classes.hourText}>Friday - Saturday: 11am-9pm </Typography>
                         <Typography className={classes.hourText}> Sunday: 12pm-9pm</Typography>
                         <Typography className={classes.hourText}>Grill closes at 8pm</Typography>
                     </div>
