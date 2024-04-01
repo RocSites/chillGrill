@@ -22,6 +22,7 @@ import SprinklesSvg from '../components/sprinkles'
 import FacebookIcon from "../images/facebook_icon_60.png"
 import InstagramIcon from "../images/instagram_icon.png"
 import GoogleIcon from "../images/google_icon.png"
+import EclipseImage from "../images/Chill_Grill_Website_Estimate.jpeg"
 import "./main.css"
 
 const withStyles = makeStyles(() => ({
@@ -489,7 +490,7 @@ const withStyles = makeStyles(() => ({
     },
     mainBanner: {
         display: "flex",
-        marginTop: "25%",
+        marginTop: "15%",
         marginLeft: "25%",
         marginRight: "15%",
         textAlign: "center",
@@ -500,8 +501,8 @@ const withStyles = makeStyles(() => ({
         borderRadius: "35px",
         "@media(max-width:600px)": {
             marginTop: "50%",
-            marginLeft: "15%",
-            marginRight: "15%",
+            marginLeft: "2%",
+            marginRight: "2%",
         }
     },
 
@@ -548,7 +549,9 @@ const Main = () => {
 
     return (
         <div className={classes.mainRoot}>
-            {/* <div className={classes.mainBanner}>We are closed Tuesday, August 1st. We will reopen Wednesday, August 2nd</div> */}
+            <div className={classes.mainBanner}>
+                <img src={EclipseImage} />
+            </div>
 
             <img src={iceCreamOne} className={classes.landingImage} />
             <section class="py-5 section-bubble1">
@@ -566,8 +569,7 @@ const Main = () => {
                     </div>
                     <div className={classes.containerMarginBottomSmall}>
                         <Typography className={classes.hourlyHeaderText}>OPEN DAILY</Typography>
-                        <Typography className={classes.hourText}>Monday - Thursday: 3pm-8:30pm </Typography>
-                        <Typography className={classes.hourText}>Friday - Saturday: 11am-9pm </Typography>
+                        <Typography className={classes.hourText}>Monday - Saturday: 11am-9pm </Typography>
                         <Typography className={classes.hourText}> Sunday: 12pm-9pm</Typography>
                         <Typography className={classes.hourText}>Grill closes at 8pm</Typography>
                     </div>
