@@ -549,9 +549,9 @@ const Main = () => {
 
     return (
         <div className={classes.mainRoot}>
-            <div className={classes.mainBanner}>
+            {/* <div className={classes.mainBanner}>
                 <img src={EclipseImage} />
-            </div>
+            </div> */}
 
             <img src={iceCreamOne} className={classes.landingImage} />
             <section class="py-5 section-bubble1">
