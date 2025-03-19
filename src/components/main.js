@@ -500,7 +500,7 @@ const withStyles = makeStyles(() => ({
         padding: "20px",
         borderRadius: "35px",
         "@media(max-width:600px)": {
-            marginTop: "50%",
+            marginTop: "65%",
             marginLeft: "2%",
             marginRight: "2%",
         }
@@ -549,9 +549,9 @@ const Main = () => {
 
     return (
         <div className={classes.mainRoot}>
-            {/* <div className={classes.mainBanner}>
-                <img src={EclipseImage} />
-            </div> */}
+            <div className={classes.mainBanner}>
+                <p class="mainBannerText">Opening Day March 20th!!!</p>
+            </div> 
 
             <img src={iceCreamOne} className={classes.landingImage} />
             <section class="py-5 section-bubble1">
